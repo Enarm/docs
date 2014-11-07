@@ -1,0 +1,296 @@
+<!doctype html><html class="getting-started"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="description" content=""><meta name="keywords" content=""><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>开始使用 - Widget | Amaze UI</title><meta name="renderer" content="webkit"><meta http-equiv="Cache-Control" content="no-siteapp"/><link rel="alternate icon" type="image/png" href="../../assets/i/favicon.png"><meta name="apple-mobile-web-app-title" content="Amaze UI"/><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="stylesheet" href="../../assets/css/amazeui.css"><link rel="stylesheet" href="../../assets/css/amaze.css"><script src="../../assets/js/zepto.js"></script><script src="../../assets/js/amazeui.js"></script><link rel="canonical" href="http://amazeui.org/getting-started/widget?_ver=1.x"/></head><body class=""><header id="amz-header"><div class="amz-container am-cf"><h1><a href="../../">Amaze UI</a></h1><button class="am-btn am-btn-primary am-show-sm-only" data-am-collapse="{target: '.amz-header-nav'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button><nav><ul class="amz-header-nav am-collapse"><li class="am-active"><a href="../../getting-started">开始使用</a></li><li><a href="../../css">CSS</a></li><li><a href="../../javascript">JS 插件</a></li><li><a href="../../widgets">Web 组件</a></li><li class="nav-profile need-check"></li></ul></nav></div></header><div class="amz-banner"><div class="amz-container" data-am-scrollspy="{animation: 'scale-up', repeat: false}"><h1>开始使用</h1><p>Amaze UI 概览，下载、使用，模板示例，二次开发等……</p></div></div><section class="" id="amz-main" data-tag="widget"><div class="am-g amz-container"><div class="col-md-3"><div id="amz-offcanvas" class="am-offcanvas doc-offcanvas"><section class="amz-sidebar am-offcanvas-bar"><ul class="am-nav"><li class="am-nav-header">基本使用</li><li><a href="../../getting-started/layouts">布局示例<span class="am-nav-en">Layouts</span></a></li><li><a href="../../getting-started/compatibility">兼容性列表<span class="am-nav-en">Compatibility</span></a></li><li><a href="https://github.com/allmobilize/amazeui/blob/master/CHANGELOG.md" target="_blank">更新记录<span class="am-nav-en">Change Log</span></a></li><li><a href="../../getting-started/webapp">Web App 相关<span class="am-nav-en">Web App</span></a></li><li class="am-nav-header">进阶开发</li><li><a href="../../getting-started/project-structure">项目结构<span class="am-nav-en">Structure</span></a></li><li><a href="../../getting-started/widget-dev">Web 组件简介<span class="am-nav-en">Web Component</span></a></li><li><a href="../../getting-started/html-css">HTML/CSS 规范<span class="am-nav-en">Rules</span></a></li><li><a href="../../getting-started/javascript">JavaScript 规范<span class="am-nav-en">Rules</span></a></li><li class="am-active"><a href="../../getting-started/widget">Web 组件规范<span class="am-nav-en">Rules</span></a></li><li class="am-nav-header">你来我往</li><li><a href="../../getting-started/faq">常见问题<span class="am-nav-en">FAQs</span></a></li><li><a href="../../getting-started/feedback">Bug 反馈<span class="am-nav-en">Feedback</span></a></li><li><a href="../../getting-started/next">遇见未来<span class="am-nav-en">Next</span></a></li><li><a href="../../getting-started/credits">感谢有你<span class="am-nav-en">Credits</span></a></li><li><a href="../../getting-started/team">开发者说<span class="am-nav-en">Team</span></a></li></ul></section><div class="amz-pager"><a href="#up" class="am-icon-caret-up" data-rel="scrollUp"></a> <a href="#down" class="am-icon-caret-down" data-rel="scrollDown"></a></div></div></div><div class="col-md-9 doc-content"><h1 id="amaze-ui-web-&#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x89C4;&#x8303;">Amaze UI Web &#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x89C4;&#x8303; <a href="#amaze-ui-web-%E7%BB%84%E4%BB%B6%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83" title="Heading anchor" class="doc-anchor"></a></h1><hr><div class="doc-toc"><h2><span>&#x76EE;&#x5F55;</span></h2><div class="doc-toc-bd"><ul class="md-toc"><li><a href="#web-%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F%E7%BB%84%E7%BB%87">Web &#x7EC4;&#x4EF6;&#x6837;&#x5F0F;&#x7EC4;&#x7EC7;</a></li><li><a href="#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%8F%8A%E8%AF%B4%E6%98%8E">&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x53CA;&#x8BF4;&#x660E;</a><ul class="am-collapse"><li><a href="#package-json">package.json</a></li><li><a href="#readme-md">README.md</a></li><li><a href="#history-md">HISTORY.md</a></li><li><a href="#src-%E7%9B%AE%E5%BD%95">src &#x76EE;&#x5F55;</a></li></ul></li><li><a href="#%E5%BC%80%E5%8F%91%E8%84%9A%E6%89%8B%E6%9E%B6">&#x5F00;&#x53D1;&#x811A;&#x624B;&#x67B6;</a></li><li><a href="#%E8%B0%83%E8%AF%95%E9%A2%84%E8%A7%88">&#x8C03;&#x8BD5;&#x9884;&#x89C8;</a></li></ul></div></div><p>Web &#x7EC4;&#x4EF6;&#x57FA;&#x4E8E; Amaze UI &#x57FA;&#x7840;&#x5E93;&#xFF08;<a href="/css/">CSS</a> / <a href="/javascript">JS</a>&#xFF09;&#x5F00;&#x53D1;&#xFF0C;&#x5728;&#x57FA;&#x7840;&#x5E93;&#x5DF2;&#x6709;&#x6837;&#x5F0F;&#x3001;&#x529F;&#x80FD;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x505A;&#x66F4;&#x591A;&#x6269;&#x5C55;&#x3002;</p><h2 id="web-&#x7EC4;&#x4EF6;&#x6837;&#x5F0F;&#x7EC4;&#x7EC7;">Web &#x7EC4;&#x4EF6;&#x6837;&#x5F0F;&#x7EC4;&#x7EC7; <a href="#web-%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F%E7%BB%84%E7%BB%87" title="Heading anchor" class="doc-anchor"></a></h2><p>Web &#x7EC4;&#x4EF6;&#x7684;&#x6837;&#x5F0F;&#x6709;&#x4E09;&#x4E2A;&#x5C42;&#x7EA7;&#xFF1A;</p><ol><li><p>Amaze UI &#x57FA;&#x7840;&#x6837;&#x5F0F;: &#x6BCF;&#x4E2A;&#x7F51;&#x7AD9;&#x9879;&#x76EE;&#x4E2D;&#x90FD;&#x4F1A;&#x9ED8;&#x8BA4;&#x5F15;&#x5165;&#x4EE5;&#x4E0B;&#x57FA;&#x7840;&#x6837;&#x5F0F;&#xFF0C;&#x7EC4;&#x4EF6;&#x5F00;&#x53D1;&#x65F6;&#x5E94;&#x5728;&#x4EE5;&#x4E0B;&#x6837;&#x5F0F;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x8FDB;&#x884C;&#x3002;</p><ul><li><code>variables.less</code></li><li><code>mixins.less</code></li><li><code>base.less</code></li><li><code>grid.less</code></li><li><code>block-grid.less</code></li><li><code>utility.less</code></li></ul></li><li><p>Amaze UI &#x5176;&#x4ED6;&#x6837;&#x5F0F;&#x7EC4;&#x4EF6;&#xFF1A;Web &#x7EC4;&#x4EF6;&#x7F16;&#x5199;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x5230;&#x7C7B;&#x4F3C;&#x7684;&#x6837;&#x5F0F;&#x65F6;&#x5E94;&#x5F53;&#x5F15;&#x5165;&#x76F8;&#x5173; <a href="/css/">CSS &#x7EC4;&#x4EF6;</a>&#xFF0C;&#x5728;&#x6B64;&#x4E0A;&#x8FDB;&#x884C;&#x5FAE;&#x8C03;&#xFF0C;&#x6BD4;&#x5982; <code>button.less</code>&#x3001;<code>close.less</code>&#x3002;</p></li><li><p>Web &#x7EC4;&#x4EF6;&#x81EA;&#x8EAB;&#x6837;&#x5F0F;&#xFF1A;Web &#x7EC4;&#x4EF6;&#x81EA;&#x8EAB;&#x6837;&#x5F0F;&#x62C6;&#x5206;&#x51FA;&#x9AA8;&#x5E72;&#x6837;&#x5F0F;&#x548C;&#x4E3B;&#x9898;&#x6837;&#x5F0F;&#xFF1B;&#x6BCF;&#x4E2A; Web &#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x4E3B;&#x9898;&#xFF0C;&#x4E3B;&#x9898;&#x57FA;&#x4E8E;&#x9AA8;&#x5E72;&#x6837;&#x5F0F;&#x7F16;&#x5199;&#xFF0C;&#x6BCF;&#x4E2A;&#x4E3B;&#x9898;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x3002;</p><ul><li>&#x9AA8;&#x5E72;&#x6837;&#x5F0F;&#x4EE5; <code>{widget}.less</code> &#x547D;&#x540D;&#xFF1B;</li><li>&#x9ED8;&#x8BA4;&#x4E3B;&#x9898;&#x4EE5; <code>{widget}.default.less</code> &#x547D;&#x540D;&#xFF1B;</li><li>&#x5176;&#x4ED6;&#x4E3B;&#x9898;&#x4EE5; <code>{widget}.{theme-name}.less</code> &#x547D;&#x540D;&#x3002;</li></ul></li></ol><h2 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x53CA;&#x8BF4;&#x660E;">&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x53CA;&#x8BF4;&#x660E; <a href="#%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%8F%8A%E8%AF%B4%E6%98%8E" title="Heading anchor" class="doc-anchor"></a></h2><p>&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p><pre>{widget}
+|-- package.json
+|-- README.md
+|-- HISTORY.md
+|-- resources
+|   `-- screenshots
+|       |-- 0.jpg
+|       |-- 1.jpg
+|       `-- 2.jpg
+`-- src
+    |-- {widget}.hbs
+    |-- {widget}.js
+    |-- {widget}.less
+    |-- {widget}.default.less
+    |-- {widget}.[theme1].less
+    |-- {widget}.[themen].less
+    `-- {widget}.png
+</pre><h3 id="package-json"><code>package.json</code> <a href="#package-json" title="Heading anchor" class="doc-anchor"></a></h3><p>Web &#x7EC4;&#x4EF6;&#x6838;&#x5FC3;&#x63CF;&#x8FF0;&#x6587;&#x4EF6;&#xFF0C;<code>json</code> &#x683C;&#x5F0F;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x6CE8;&#x91CA;&#x4EC5;&#x4E3A;&#x65B9;&#x4FBF;&#x89E3;&#x91CA;&#x5404;&#x9879;&#x542B;&#x4E49;&#x6DFB;&#x52A0;&#x3002;</p><div class="doc-code demo-highlight"><pre class=""><code class="javascript">{
+    <span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x540D;&#x79F0;: &#x4F7F;&#x7528;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x4E0D;&#x80FD;&#x548C;&#x5B58;&#x5728;&#x7684;&#x7EC4;&#x4EF6;&#x91CD;&#x540D;</span>
+    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;sample&quot;</span>,
+
+    <span class="hljs-comment">// &#x7248;&#x672C;&#x53F7;</span>
+    <span class="hljs-string">&quot;version&quot;</span>: <span class="hljs-string">&quot;0.0.1&quot;</span>,
+
+    <span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x672C;&#x5730;&#x5316;&#x540D;&#x5B57;&#xFF0C;&#x76EE;&#x524D;&#x6709;&#x4E2D;&#x6587;&#x3001;&#x82F1;&#x6587;&#x4E24;&#x4E2A;&#x9009;&#x9879;</span>
+    <span class="hljs-string">&quot;localName&quot;</span>: {
+        <span class="hljs-string">&quot;en&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+        <span class="hljs-string">&quot;zh-cn&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    },
+
+    <span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x7C7B;&#x578B; [&quot;&quot;|&quot;layout&quot;|&quot;social&quot;]</span>
+    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+
+    <span class="hljs-comment">// &#x7EC4;&#x4EF6; ICON&#xFF0C;&#x5B58;&#x653E;&#x5728; src &#x76EE;&#x5F55;&#x4E0B;</span>
+    <span class="hljs-string">&quot;icon&quot;</span>: <span class="hljs-string">&quot;sample.png&quot;</span>,
+
+    <span class="hljs-comment">// &#x4F5C;&#x8005;&#x4FE1;&#x606F;</span>
+    <span class="hljs-string">&quot;author&quot;</span>: {
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;xxx&quot;</span>,
+        <span class="hljs-string">&quot;email&quot;</span>: <span class="hljs-string">&quot;xxx@yunshipei.com&quot;</span>
+    },
+
+    <span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x63CF;&#x8FF0;</span>
+    <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;sample &#x63CF;&#x8FF0;&quot;</span>,
+
+    <span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x9A71;&#x52A8;&#x8005;</span>
+    <span class="hljs-string">&quot;poweredBy&quot;</span>: <span class="hljs-string">&quot;AllMobilize&quot;</span>,
+
+    <span class="hljs-comment">// &#x57FA;&#x7840;&#x6837;&#x5F0F;&#xFF08;&#x65E0;&#x9700;&#x4FEE;&#x6539;&#xFF09;</span>
+    <span class="hljs-string">&quot;styleBase&quot;</span>: [
+        <span class="hljs-string">&quot;variables.less&quot;</span>,
+        <span class="hljs-string">&quot;mixins.less&quot;</span>,
+        <span class="hljs-string">&quot;base.less&quot;</span>,
+        <span class="hljs-string">&quot;grid.less&quot;</span>,
+        <span class="hljs-string">&quot;block-grid.less&quot;</span>,
+        <span class="hljs-string">&quot;utility.less&quot;</span>
+    ],
+
+    <span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x6A21;&#x677F;&#xFF0C;&#x4F7F;&#x7528; [handlebarsjs](http://handlebarsjs.com/)</span>
+    <span class="hljs-string">&quot;template&quot;</span>: <span class="hljs-string">&quot;sample.hbs&quot;</span>,
+
+    <span class="hljs-comment">// &#x4F9D;&#x8D56;&#x7684;&#x5E93;&#x6837;&#x5F0F;</span>
+    <span class="hljs-string">&quot;styleDependencies&quot;</span>: [
+        <span class="hljs-string">&quot;icon.less&quot;</span>
+    ],
+
+    <span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x6838;&#x5FC3;&#x6837;&#x5F0F;</span>
+    <span class="hljs-string">&quot;style&quot;</span>: <span class="hljs-string">&quot;sample.less&quot;</span>,
+
+    <span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x4E3B;&#x9898;&#xFF08;&#x6CA1;&#x6709;&#x4E3B;&#x9898;&#x65F6;&#x5C06;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; null&#xFF09;</span>
+    <span class="hljs-string">&quot;themes&quot;</span>: [
+        {
+            <span class="hljs-comment">// &#x4E3B;&#x9898;&#x540D;&#x79F0; sample.{xxx}.less &#x4E2D;&#x7684; {xxx}&#xFF0C;&#x5C3D;&#x91CF;&#x8BED;&#x4E49;&#x5316;&#x63CF;&#x8FF0;&#x4E3B;&#x9898;</span>
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;default&quot;</span>,
+            <span class="hljs-comment">// &#x4E3B;&#x9898;&#x63CF;&#x8FF0;&#xFF0C;&#x7B80;&#x8981;&#x63CF;&#x8FF0;&#x4E3B;&#x9898;</span>
+            <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;&#x9ED8;&#x8BA4;&quot;</span>,
+            <span class="hljs-comment">// &#x4E3B;&#x9898;&#x4F7F;&#x7528;&#x914D;&#x7F6E;&#x9009;&#x9879;</span>
+            <span class="hljs-string">&quot;options&quot;</span>: {},
+            <span class="hljs-comment">// &#x4E3B;&#x9898;&#x94A9;&#x5B50;</span>
+            <span class="hljs-string">&quot;hook&quot;</span>: <span class="hljs-string">&quot;hook-am-sample-default&quot;</span>,
+            <span class="hljs-comment">// &#x4E3B;&#x9898;&#x4F7F;&#x7528;&#x7684;less&#x53D8;&#x91CF;</span>
+            <span class="hljs-string">&quot;variables&quot;</span>: [
+                {
+                    <span class="hljs-comment">// &#x53D8;&#x91CF;&#x540D;</span>
+                    <span class="hljs-string">&quot;variable&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                    <span class="hljs-comment">// &#x53D8;&#x91CF;&#x63CF;&#x8FF0;&#x540D;&#x5B57;</span>
+                    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                    <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x503C;</span>
+                    <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                    <span class="hljs-comment">// &#x4F7F;&#x7528;&#x6539;&#x53D8;&#x91CF;&#x7684; css &#x6837;&#x5F0F;</span>
+                    <span class="hljs-string">&quot;used&quot;</span>: [
+                        {
+                            <span class="hljs-string">&quot;selector&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                            <span class="hljs-string">&quot;property&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+                        }
+                    ]
+                }
+            ],
+            <span class="hljs-comment">// &#x4E3B;&#x9898;&#x6F14;&#x793A;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x591A;&#x4E2A;</span>
+            <span class="hljs-string">&quot;demos&quot;</span>: [
+                {
+                    <span class="hljs-comment">// &#x6F14;&#x793A;&#x63CF;&#x8FF0;</span>
+                    <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                    <span class="hljs-comment">// &#x6F14;&#x793A;&#x6570;&#x636E;</span>
+                    <span class="hljs-string">&quot;data&quot;</span>: {}
+                }
+            ]
+        }
+    ],
+
+    <span class="hljs-comment">// Amaze UI &#x6838;&#x5FC3;js&#xFF08;&#x65E0;&#x9700;&#x4FEE;&#x6539;&#xFF09;</span>
+    <span class="hljs-string">&quot;jsBase&quot;</span>: [
+        <span class="hljs-string">&quot;core.js&quot;</span>
+    ],
+
+    <span class="hljs-comment">// &#x4F9D;&#x8D56;&#x7684; Amaze UI js &#x63D2;&#x4EF6;</span>
+    <span class="hljs-string">&quot;jsDependencies&quot;</span>: [],
+
+    <span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x811A;&#x672C;</span>
+    <span class="hljs-string">&quot;script&quot;</span>: <span class="hljs-string">&quot;sample.js&quot;</span>,
+
+    <span class="hljs-comment">// api &#x7528;&#x4E8E;&#x751F;&#x6210;&#x7528;&#x6237; GUI &#x754C;&#x9762;&#x4EE5;&#x53CA;&#x4FDD;&#x5B58;&#x7528;&#x6237;&#x63D0;&#x4EA4;&#x7684;&#x6570;&#x636E;</span>
+    <span class="hljs-string">&quot;api&quot;</span>: {
+        <span class="hljs-string">&quot;id&quot;</span>: {
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;ID&quot;</span>, <span class="hljs-comment">// &#x8868;&#x5355;&#x63D0;&#x793A;&#x540D;&#x79F0;</span>
+            <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;&#x7EC4;&#x4EF6;&#x81EA;&#x5B9A;&#x4E49;ID&#xFF0C;&#x9075;&#x5FAA;CSS ID&#x547D;&#x540D;&#x89C4;&#x8303;&quot;</span>,
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;text&quot;</span>, <span class="hljs-comment">// &#x8868;&#x5355;&#x7C7B;&#x578B;</span>
+            <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x503C;</span>
+            <span class="hljs-string">&quot;pattern&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">// &#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</span>
+            <span class="hljs-string">&quot;required&quot;</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// &#x662F;&#x5426;&#x4E3A;&#x5FC5;&#x586B;</span>
+        },
+        <span class="hljs-string">&quot;className&quot;</span>: {
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Class&quot;</span>,
+            <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6; class&#xFF0C;&#x9075;&#x5FAA; CSS class &#x547D;&#x540D;&#x89C4;&#x8303;&quot;</span>,
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;text&quot;</span>,
+            <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+            <span class="hljs-string">&quot;required&quot;</span>: <span class="hljs-literal">false</span>
+        },
+        <span class="hljs-comment">// &#x4E3B;&#x9898;&#x9009;&#x62E9;&#xFF08;&#x6CA1;&#x6709;&#x4E3B;&#x9898;&#x65F6;&#x5C06;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; null&#xFF09;</span>
+        <span class="hljs-string">&quot;theme&quot;</span>: {
+            <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x4E3B;&#x9898;&quot;</span>,
+            <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;&#x7EC4;&#x4EF6;&#x4E3B;&#x9898;&quot;</span>,
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;select&quot;</span>, <span class="hljs-comment">// &#x4E0B;&#x62C9;&#x9009;&#x6846;</span>
+            <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;default&quot;</span>,
+            <span class="hljs-string">&quot;required&quot;</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-string">&quot;dataList&quot;</span>: <span class="hljs-string">&quot;&lt;%= pkg.themes %&gt;&quot;</span> <span class="hljs-comment">// &#x4ECE; themes &#x4E2D;&#x8BFB;&#x53D6;&#x4E3B;&#x9898;&#x5217;&#x8868;</span>
+        },
+        <span class="hljs-comment">// &#x7EC4;&#x4EF6;&#x9009;&#x9879;&#xFF08;&#x6CA1;&#x6709;&#x9009;&#x9879;&#x65F6;&#x5C06;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; null&#xFF09;</span>
+        <span class="hljs-string">&quot;options&quot;</span>: {
+            <span class="hljs-string">&quot;multiple&quot;</span>: {
+                <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x540C;&#x65F6;&#x5C55;&#x5F00;&#x591A;&#x4E2A;&#x9762;&#x677F;&quot;</span>,
+                <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x540C;&#x65F6;&#x5C55;&#x5F00;&#x591A;&#x4E2A;&#x9762;&#x677F;&quot;</span>,
+                <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;select&quot;</span>,
+                <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-literal">false</span>,
+                <span class="hljs-string">&quot;required&quot;</span>: <span class="hljs-literal">false</span>,
+                <span class="hljs-comment">// &#x8868;&#x5355;&#x7C7B;&#x578B;&#x4E3A; select &#x65F6;&#x901A;&#x8FC7; dataList &#x8BBE;&#x7F6E; &lt;option&gt; &#x6570;&#x636E;</span>
+                <span class="hljs-string">&quot;dataList&quot;</span>: [
+                    {
+                        <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;false&quot;</span>,
+                        <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&#x4E0D;&#x542F;&#x7528;&quot;</span>,
+                        <span class="hljs-string">&quot;selected&quot;</span>: <span class="hljs-literal">true</span>
+                    },
+                    {
+                        <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-literal">true</span>,
+                        <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&#x542F;&#x7528;&quot;</span>
+                    }
+                ]
+            }
+        },
+
+        <span class="hljs-comment">// &#x5185;&#x5BB9;</span>
+        <span class="hljs-string">&quot;content&quot;</span>: {
+              <span class="hljs-comment">// &#x5185;&#x5BB9;&#x7C7B;&#x578B; Array &#x6570;&#x7EC4;&#x3001;Object&#xFF08;&#x5BF9;&#x8C61;&#xFF09;</span>
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;Array&quot;</span>,
+            <span class="hljs-string">&quot;item&quot;</span>: {
+                <span class="hljs-string">&quot;title&quot;</span>: {
+                    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;text&quot;</span>,
+                    <span class="hljs-string">&quot;comment&quot;</span>: <span class="hljs-string">&quot;&#x9762;&#x677F;&#x6807;&#x9898;&quot;</span>
+                },
+                <span class="hljs-string">&quot;content&quot;</span>: {
+                    <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;html&quot;</span>,
+                    <span class="hljs-string">&quot;comment&quot;</span>: <span class="hljs-string">&quot;&#x9762;&#x677F;&#x5185;&#x5BB9;&quot;</span>
+                }
+            }
+        }
+
+        <span class="hljs-comment">// &#x8868;&#x5355;&#x63A5;&#x53E3; - &#x6D4B;&#x8BD5;&#x63A5;&#x53E3;&#xFF0C;&#x7EC6;&#x8282;&#x8FD8;&#x4F1A;&#x505A;&#x8C03;&#x6574;</span>
+        <span class="hljs-comment">// &#x63D0;&#x4F9B;&#x7684;&#x8868;&#x5355;&#x63A5;&#x53E3;&#x5FC5;&#x987B;&#x652F;&#x6301;&#x8DE8;&#x57DF;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE; JSON &#x6570;&#x636E;</span>
+        <span class="hljs-string">&quot;forms&quot;</span>: {
+            <span class="hljs-string">&quot;signin&quot;</span>: {
+                <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;http://api.xxx.com/signin&quot;</span>, <span class="hljs-comment">// &#x63D0;&#x4EA4;&#x6570;&#x636E;&#x7684;&#x63A5;&#x53E3;</span>
+                <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;POST&quot;</span>,
+                <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;&#x767B;&#x5F55;&#x8868;&#x5355;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x5199;&#x8868;&#x5355;&#x7684;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&quot;</span>,
+                <span class="hljs-string">&quot;fields&quot;</span>: { <span class="hljs-comment">// &#x8868;&#x5355;&#x5B57;&#x6BB5;&#xFF0C;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x5E94;&#x8BE5;&#x548C;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x91CC;&#x7684;&#x5B57;&#x6BB5;&#x5BF9;&#x5E94;</span>
+                    <span class="hljs-string">&quot;username&quot;</span>: {
+                        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&quot;</span>,
+                        <span class="hljs-string">&quot;placeholder&quot;</span>: <span class="hljs-string">&quot;&#x8BF7;&#x4F7F;&#x7528;&#x90AE;&#x7BB1;&quot;</span>,
+                        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;text&quot;</span>,
+                        <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                        <span class="hljs-string">&quot;required&quot;</span>: <span class="hljs-literal">true</span>
+                    },
+                    <span class="hljs-string">&quot;password&quot;</span>: {
+                        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5BC6;&#x7801;&quot;</span>,
+                        <span class="hljs-string">&quot;placeholder&quot;</span>: <span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&quot;</span>,
+                        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;text&quot;</span>,
+                        <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                        <span class="hljs-string">&quot;required&quot;</span>: <span class="hljs-literal">true</span>
+                    },
+                    <span class="hljs-string">&quot;submit&quot;</span>: {
+                        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x63D0;&#x4EA4;&#x4FE1;&#x606F;&quot;</span>,
+                        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;submit&quot;</span>,
+                        <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+                    }
+                }
+            },
+
+            <span class="hljs-string">&quot;signup&quot;</span>: {
+                <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;http://api.xxx.com/signup&quot;</span>,
+                <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;POST&quot;</span>,
+                <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;&#x6CE8;&#x518C;&#x8868;&#x5355;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x5199;&#x8868;&#x5355;&#x7684;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&quot;</span>,
+                <span class="hljs-string">&quot;fields&quot;</span>: {
+                    <span class="hljs-string">&quot;username&quot;</span>: {
+                        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&quot;</span>,
+                        <span class="hljs-string">&quot;placeholder&quot;</span>: <span class="hljs-string">&quot;&#x8BF7;&#x4F7F;&#x7528;&#x90AE;&#x7BB1;&quot;</span>,
+                        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;text&quot;</span>,
+                        <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                        <span class="hljs-string">&quot;required&quot;</span>: <span class="hljs-literal">true</span>
+                    },
+                    <span class="hljs-string">&quot;password&quot;</span>: {
+                        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x5BC6;&#x7801;&quot;</span>,
+                        <span class="hljs-string">&quot;placeholder&quot;</span>: <span class="hljs-string">&quot;&#x8BBE;&#x7F6E;&#x5BC6;&#x7801;&quot;</span>,
+                        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;text&quot;</span>,
+                        <span class="hljs-string">&quot;default&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+                        <span class="hljs-string">&quot;required&quot;</span>: <span class="hljs-literal">true</span>
+                    }
+                }
+            }
+        }
+    },
+
+    <span class="hljs-comment">// &#x662F;&#x5426;&#x9690;&#x85CF;&#x7EC4;&#x4EF6; - &#x6B64;&#x9009;&#x9879;&#x4F9B;&#x4E91;&#x9002;&#x914D; WebIDE &#x4F7F;&#x7528;</span>
+    <span class="hljs-string">&quot;hidden&quot;</span>: <span class="hljs-literal">false</span>
+}
+</code></pre></div><h3 id="readme-md"><code>README.md</code> <a href="#readme-md" title="Heading anchor" class="doc-anchor"></a></h3><p>Web &#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x8BF4;&#x660E;&#xFF0C;&#x5305;&#x62EC; Web &#x7EC4;&#x4EF6; API &#x4ECB;&#x7ECD;&#x3001;&#x4F7F;&#x7528;&#x6280;&#x5DE7;&#x3001;&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#x7B49;&#x3002;</p><h3 id="history-md"><code>HISTORY.md</code> <a href="#history-md" title="Heading anchor" class="doc-anchor"></a></h3><p>Web &#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x3002;</p><h3 id="src-&#x76EE;&#x5F55;"><code>src</code> &#x76EE;&#x5F55; <a href="#src-%E7%9B%AE%E5%BD%95" title="Heading anchor" class="doc-anchor"></a></h3><p><code>src</code> &#x76EE;&#x5F55;&#x5305;&#x542B; Web &#x7EC4;&#x4EF6;&#x7684;&#x6A21;&#x677F;&#xFF08;hbs&#xFF09;&#x3001;&#x6838;&#x5FC3;&#x6837;&#x5F0F;&#xFF08;less&#xFF09;&#x3001;&#x4EA4;&#x4E92;&#xFF08;js&#xFF09;&#x3001;&#x56FE;&#x6807;&#xFF08;png&#xFF09;&#x3001;&#x4E3B;&#x9898;&#x6587;&#x4EF6;&#x3002;</p><p><code>src</code> &#x76EE;&#x5F55;&#x91CC;&#x7684;&#x6587;&#x4EF6;&#x4F7F;&#x7528; Web &#x7EC4;&#x4EF6;&#x540D;&#x79F0;&#x4F5C;&#x4E3A;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x4E3B;&#x9898;&#x4F7F;&#x7528; <code>{Web &#x7EC4;&#x4EF6;&#x540D;}.{&#x4E3B;&#x9898;&#x540D;}.less</code> &#x5F62;&#x5F0F;&#x547D;&#x540D;&#x3002;</p><ul><li><code>{widget}.hbs</code>: &#x6A21;&#x677F;&#xFF0C;&#x4F7F;&#x7528; handlebars</li><li><code>{widget}.less</code>: &#x4E3B;&#x9898;&#x6838;&#x5FC3;&#x6837;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528; less &#x7F16;&#x5199;</li><li><code>{widget}.js</code>: &#x7EC4;&#x4EF6;&#x4EA4;&#x4E92;</li><li><code>{widget}.png</code>: &#x7EC4;&#x4EF6;&#x56FE;&#x6807;&#xFF0C;50px * 50px</li><li><code>{widget}.default.less</code>: &#x9ED8;&#x8BA4;&#x4E3B;&#x9898;</li><li><code>{widget}.xxx.less</code>: &#x5176;&#x4ED6;&#x4E3B;&#x9898;&#xFF0C;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x591A;</li></ul><h4 id="&#x6A21;&#x677F;-widget-hbs">&#x6A21;&#x677F; <code>{widget}.hbs</code> <a href="#%E6%A8%A1%E6%9D%BF-widget-hbs" title="Heading anchor" class="doc-anchor"></a></h4><ul><li><code>data-am-widget=&quot;figure&quot;</code> &#x4E3A;&#x7EDF;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#xFF1B;</li><li><code>.am-{Web &#x7EC4;&#x4EF6;&#x540D;}</code> &#x4E3A; Web &#x7EC4;&#x4EF6;&#x57FA;&#x7840;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;Web &#x7EC4;&#x4EF6;&#x7684;&#x6240;&#x6709;&#x5B50;&#x5143;&#x7D20;&#x3001;&#x4E3B;&#x9898;&#x3001;&#x72B6;&#x6001;&#x57FA;&#x4E8E;&#x6B64;&#x547D;&#x540D;&#xFF1B; Web &#x7EC4;&#x4EF6;&#x57FA;&#x7840;&#x6807;&#x8BC6;&#x7B26;&#x91C7;&#x7528; <code>am-{widget}</code> &#x65B9;&#x5F0F;&#x547D;&#x540D;&#xFF0C;&#x5B50;&#x5143;&#x7D20;&#x3001;&#x4E3B;&#x9898;&#x3001;&#x72B6;&#x6001;&#x91C7;&#x7528; <code>am-{widget}-{&#x5B50;&#x5143;&#x7D20;|&#x4E3B;&#x9898;|&#x72B6;&#x6001;}</code>&#xFF0C;&#x5982; <code>am-figure-hover</code> &#x3001; <code>am-figure-bd</code> &#x3001; <code>am-figure-active</code> &#x3001; <code>am-figure-ios7</code>&#x3002;</li><li>&#x6A21;&#x677F;&#x4F7F;&#x7528; <code>{{#this}}..{{this}}</code> &#x5305;&#x88F9;&#xFF08;Web &#x7EC4;&#x4EF6;&#x4F7F;&#x7528;&#x65F6;&#x6CE8;&#x518C;&#x4E3A; Handlebars <code>partial</code>&#xFF0C;&#x901A;&#x8FC7; <code>{{&gt; widget data}}</code> &#x7684;&#x5F62;&#x5F0F;&#x8C03;&#x7528;&#x3002;</li></ul><div class="doc-code demo-highlight"><pre class=""><code class="xml">{{#this}}
+  <span class="hljs-tag">&lt;<span class="hljs-title">figure</span> <span class="hljs-attribute">data-am-widget</span>=<span class="hljs-value">&quot;figure&quot;</span>
+      <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;am-figure{{#if theme}} am-figure-{{theme}}{{else}} am-figure-default{{/if}}{{#if options.zoomble}} am-figure-zoomable{{/if}}{{#if widgetId}} {{widgetId}}{{/if}}{{#if className}} {{className}}{{/if}}&quot;</span><span class="hljs-value">{{#if</span> <span class="hljs-attribute">id</span>}}
+      <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;{{id}}&quot;</span><span class="hljs-value">{{</span>/<span class="hljs-attribute">if</span>}}&gt;</span>
+    {{#if content.img}}
+      <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;{{content.img}}&quot;</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">&quot;{{#if content.imgAlt}}{{content.imgAlt}}{{else}}{{content.figcaption}}{{/if}}&quot;</span>/&gt;</span>
+    {{/if}}
+
+    {{#if content.figcaption}}
+       <span class="hljs-tag">&lt;<span class="hljs-title">figcaption</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;am-figure-capition&quot;</span>&gt;</span>
+         {{content.figcaption}}
+       <span class="hljs-tag">&lt;/<span class="hljs-title">figcaption</span>&gt;</span>
+    {{/if}}
+  <span class="hljs-tag">&lt;/<span class="hljs-title">figure</span>&gt;</span>
+{{/this}}
+</code></pre></div><p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;</p><ul><li>Handlebars &#x6A21;&#x677F;&#x4E2D;&#x4E0D;&#x652F;&#x6301; <code>&lt;script&gt;</code> &#x6807;&#x7B7E;&#xFF0C;&#x5982;&#x9700;&#x52A0;&#x8F7D;&#x5916;&#x90E8;&#x811A;&#x672C;&#x9700;&#x5728; <code>{widget}.js</code> &#x4E2D;&#x8FDB;&#x884C;&#x3002;</li><li>&#x5982;&#x679C;&#x9700;&#x8981;&#x4FDD;&#x5B58;&#x7528;&#x6237;&#x8BBE;&#x7F6E;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x4F7F;&#x7528; <code>data-am-{widget}-{option}</code> &#x4FDD;&#x5B58;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5728; <code>{widget}.js</code> &#x4E2D;&#x901A;&#x8FC7; <code>attr(&apos;data-am-{widget}-{option}&apos;)</code> &#x8BFB;&#x53D6;&#x3002;</li></ul><h4 id="&#x6838;&#x5FC3;&#x6837;&#x5F0F;-widget-less">&#x6838;&#x5FC3;&#x6837;&#x5F0F; <code>{widget}.less</code> <a href="#%E6%A0%B8%E5%BF%83%E6%A0%B7%E5%BC%8F-widget-less" title="Heading anchor" class="doc-anchor"></a></h4><p>Web &#x7EC4;&#x4EF6;&#x6837;&#x5F0F;&#x4F7F;&#x7528; less &#x7F16;&#x5199;&#x3002;</p><div class="doc-code demo-highlight"><pre class=""><code class="css">.am-{widget} {
+
+  .hook-am-{widget};
+}
+
+.hook-am-{widget}() {}
+</code></pre></div><p>&#x6837;&#x5F0F;&#x6DFB;&#x52A0;&#x5FC5;&#x8981;&#x7684; <code>hook</code>&#xFF0C;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x4FEE;&#x6539;&#x3002;</p><h4 id="&#x9ED8;&#x8BA4;&#x4E3B;&#x9898;-widget-defalt-less">&#x9ED8;&#x8BA4;&#x4E3B;&#x9898; <code>{widget}.defalt.less</code> <a href="#%E9%BB%98%E8%AE%A4%E4%B8%BB%E9%A2%98-widget-defalt-less" title="Heading anchor" class="doc-anchor"></a></h4><div class="doc-code demo-highlight"><pre class=""><code class="css">.am-{widget}-default {
+
+  .hook-am-{widget}-default;
+}
+
+.hook-am-{widget}-default() {}
+</code></pre></div><h4 id="&#x5176;&#x4ED6;&#x4E3B;&#x9898;-widget-xxx-less">&#x5176;&#x4ED6;&#x4E3B;&#x9898; <code>{widget}.xxx.less</code> <a href="#%E5%85%B6%E4%BB%96%E4%B8%BB%E9%A2%98-widget-xxx-less" title="Heading anchor" class="doc-anchor"></a></h4><div class="doc-code demo-highlight"><pre class=""><code class="css">.am-{widget}-xxx {
+
+  .hook-am-{widget}-xxx;
+}
+
+.hook-am-{widget}-xxx() {}
+</code></pre></div><h4 id="web-&#x7EC4;&#x4EF6;&#x4EA4;&#x4E92;-widget-js">Web &#x7EC4;&#x4EF6;&#x4EA4;&#x4E92; <code>{widget}.js</code> <a href="#web-%E7%BB%84%E4%BB%B6%E4%BA%A4%E4%BA%92-widget-js" title="Heading anchor" class="doc-anchor"></a></h4><p>Amaze UI &#x4F7F;&#x7528; Seajs &#x3001;Zepto&#xFF0C;Widget &#x7684;&#x811A;&#x672C;&#x9700;&#x6309;&#x7167; Seajs &#x89C4;&#x8303;&#x7F16;&#x5199;&#x3002;</p><p><strong>&#x5982;&#x679C;&#x8981;&#x5728; JS &#x4E2D;&#x52A8;&#x6001;&#x63D2;&#x5165;&#x5916;&#x90E8;&#x6837;&#x5F0F;&#x3001;&#x811A;&#x672C;&#xFF0C;&#x5FC5;&#x987B;&#x5728; <code>load</code> &#x4E8B;&#x4EF6;&#x89E6;&#x53D1;&#x4EE5;&#x540E;&#x518D;&#x6267;&#x884C;&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x514D;&#x5F71;&#x54CD;&#x7F51;&#x9875;&#x57FA;&#x672C;&#x5185;&#x5BB9;&#x8F7D;&#x5165;&#x3002;</strong></p><div class="doc-code demo-highlight"><pre class=""><code class="javascript">define(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(require, exports, module)</span> </span>{
+    <span class="hljs-comment">// &#x6309;&#x6B64;&#x65B9;&#x5F0F;&#x4F7F;&#x7528; Zepto</span>
+    <span class="hljs-keyword">var</span> $ = <span class="hljs-built_in">window</span>.Zepto;
+
+});
+</code></pre></div><h2 id="&#x5F00;&#x53D1;&#x811A;&#x624B;&#x67B6;">&#x5F00;&#x53D1;&#x811A;&#x624B;&#x67B6; <a href="#%E5%BC%80%E5%8F%91%E8%84%9A%E6%89%8B%E6%9E%B6" title="Heading anchor" class="doc-anchor"></a></h2><p>&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E; <a href="http://slushjs.github.io/">Slush.js</a> &#x7684;<a href="https://www.npmjs.org/package/slush-amuiwidget">&#x5F00;&#x53D1;&#x811A;&#x624B;&#x67B6;</a>&#xFF0C;&#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x751F;&#x6210; Web &#x7EC4;&#x4EF6;&#x76EE;&#x5F55;&#x53CA;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x3002;</p><p>&#x5168;&#x5C40;&#x5B89;&#x88C5; Slush:</p><div class="doc-code demo-highlight"><pre class=""><code class="bash">npm install -g slush
+</code></pre></div><p>&#x5168;&#x5C40;&#x5B89;&#x88C5; <code>slush-amuiwidget</code>:</p><div class="doc-code demo-highlight"><pre class=""><code class="bash">npm install -g slush-amuiwidget
+</code></pre></div><p>&#x5728; Amaze UI &#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x9762;&#x6267;&#x884C;:</p><div class="doc-code demo-highlight"><pre class=""><code class="bash">slush amuiwidget
+</code></pre></div><h2 id="&#x8C03;&#x8BD5;&#x9884;&#x89C8;">&#x8C03;&#x8BD5;&#x9884;&#x89C8; <a href="#%E8%B0%83%E8%AF%95%E9%A2%84%E8%A7%88" title="Heading anchor" class="doc-anchor"></a></h2><p>&#x6309;&#x7167;&#x89C4;&#x8303;&#x5F00;&#x53D1;&#x5B8C; Web &#x7EC4;&#x4EF6;&#x4EE5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x672C;&#x5730;&#x8C03;&#x8BD5;&#x9884;&#x89C8;&#x7EC4;&#x4EF6;&#x3002;</p><p>&#x5728; Amaze UI &#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#xFF1A;</p><pre>npm install
+</pre><p>&#x5168;&#x5C40;&#x5B89;&#x88C5; <code>nodemon</code>&#xFF1A;</p><pre>npm install nodemon -g
+</pre><p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x4EE5;&#x540E;&#x6267;&#x884C;&#xFF1A;</p><pre>gulp preview
+</pre><p>&#x7136;&#x540E;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x91CC;&#x6253;&#x5F00; <code>http://localhost:3008/#{component}</code> &#x67E5;&#x770B;&#x7EC4;&#x4EF6;&#x7684;&#x6548;&#x679C;&#xFF0C;<code>{component}</code> &#x66FF;&#x6362;&#x4E3A;&#x7EC4;&#x4EF6;&#x540D;&#x79F0;&#x3002;</p><p>&#x6709;&#x6837;&#x5F0F;&#x3001;&#x811A;&#x672C;&#x3001;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x65F6;&#xFF0C;&#x4FEE;&#x6539;&#x5B8C;&#x6210;&#x4EE5;&#x540E;&#x5237;&#x65B0;&#x6D4F;&#x89C8;&#x5668;&#x5373;&#x53EF;&#xFF0C;<code>nodemon</code> &#x4F1A;&#x81EA;&#x52A8;&#x91CD;&#x542F; Node &#x670D;&#x52A1;&#x3002;</p><div id="issue-list"></div><script type="text/x-handlebars-template" id="issue-list-tpl"><h2>Issue 列表</h2>
+          <ul class="am-list issue-list">
+            {{#each this}}
+              <li><a href="{{html_url}}" target="_blank" class="am-text-truncate am-icon-bug">{{title}}
+                <span
+                  class="am-badge {{#ifCond state '=='
+                  'open'}}am-badge-danger{{else}}am-badge-success{{/ifCond}}">{{state}}</span></a></li>
+            {{/each}}
+          </ul></script><div class="ds-thread" id="ds-thread" data-thread-key="3dd09329f83d5b3281ff9d0f5477ab37" data-title="开始使用 - Widget | Amaze UI"></div></div></div></section><a href="#amz-offcanvas" class="am-icon-btn am-icon-bars am-show-sm-only amz-sidebar-toggle" data-am-offcanvas><span class="am-sr-only">侧栏导航</span></a><footer class="amz-footer"><div class="am-g amz-container"><div class="col-md-4 col-md-push-8"><ul class="amz-social"><li><a href="http://weibo.com/allmobilize" title="云适配微博" target="_blank"><span class="am-icon-weibo"></span></a></li><li><a href="#am-wechat" title="云适配微信" data-am-modal><span class="am-icon-wechat"></span></a></li><li><a href="https://github.com/allmobilize/amazeui/issues" target="_blank" title="联系我们"><span class="am-icon-paper-plane"></span></a></li></ul></div><div class="col-md-8 col-md-pull-4"><h2 class="amz-fd"><a>云适配</a></h2><ul class="amz-links"><li><a href="../../about/wantu" class="am-icon-heart">&nbsp;妹子招亲</a> | <a href="../../about/contact">联系我们</a> | <a href="../../about/resources">品牌相关</a></li></ul><p class="amz-cp">&copy; 2014 AllMobilize, Inc. Licensed under <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>. Developed with <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>.</p></div></div></footer><div class="am-modal am-modal-no-btn" tabindex="-1" id="am-wechat"><div class="am-modal-dialog"><div class="am-modal-hd"><a href="" class="am-close am-close-spin" data-am-modal-close>&times;</a></div><div class="am-modal-bd"><img src="../../assets/i/am/qr-wechat.jpg" alt="云适配微信"/><br/>在微信上关注我们</div></div></div><div class="amz-toolbar" id="amz-toolbar"><a href="#top" title="回到顶部" class="am-icon-btn am-icon-arrow-up" id="amz-go-top"></a> <a href="../../getting-started/faq" title="常见问题" class="am-icon-faq am-icon-btn am-icon-question-circle"></a></div><script src="../../assets/js/ZeroClipboard.min.js"></script><script src="../../assets/js/main.js"></script></body></html><!-- Cached page generated on Fri Nov 07 2014 17:56:29 GMT+0800 (CST) -->
